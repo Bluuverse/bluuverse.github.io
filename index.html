@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html class="os-win" data-google-analytics-tracking-id="UA-68779773-1" lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Brewverse | Brewtendo</title>
+    <meta name="description" content="Brewverse is a service that lets you communicate with other players from around the world.">
+    <link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==">
+    <style>
+        body {
+            position: relative;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            color: #323232;
+            font-family: "Helvetica", "Arial", "Meiryo", sans-serif;
+            font-size: 14px;
+            text-align: center;
+            background-attachment: fixed;
+            background-size: 120px;
+            background: #e2e2e2;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAArUlEQVQoFYWQuwrCQBBFd42FlaYQRMRCO3vBNpA/8HNtBbt04gcItnaKoLKegRnYTRYzcLjzuLNh4kMILooh+SeqO6kYJOawhzE0cIBsDLRboRPwsIUFZMMWTM1UWNJWMx4ZPHV4Rq9to9U+OlpeHcHDhjmNF3LzHc01yBdPEOwvkXdiQ6fW7gp9QWM3aD+RWVI5N5X638KF+VuXvqjUru+GEs8SbnCH3gXxJPEDtBsiPW8IwCQAAAAASUVORK5CYII=);
+            word-wrap: break-word;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        #wrapper {
+            height: auto !important;
+            min-height: 100%;
+            position: relative;
+            width: 100%;
+            min-width: 320px;
+            margin: auto 0;
+            text-align: left;
+            background-color: #f4f4f4;
+        }
+
+        #sub-body {
+            top: 0;
+            width: 100%;
+            height: 54px;
+            z-index: 20;
+            background: #fff;
+            position: static;
+            border-bottom: none;
+        }
+
+        #global-menu {
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        #global-menu #global-menu-logo {
+            padding: 12px 0;
+            text-align: center;
+        }
+
+        #global-menu #global-menu-logo h1 {
+            line-height: 1;
+            margin: 0;
+            font-size: 100%;
+            font-weight: normal;
+        }
+
+        #global-menu #global-menu-logo img {
+            width: 165px;
+            height: 30px;
+        }
+
+        #main-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 170px); /* full height minus footer */
+            margin: 0 auto;
+            max-width: 100%;
+            padding: 0 0 170px 0;
+        }
+
+        #about {
+            background: #fff;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e5e5e5;
+        }
+
+        #about-inner {
+            max-width: 960px;
+            padding: 30px 25px 50px;
+            box-sizing: border-box;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #about-inner:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #about-inner:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #about-text {
+            float: left;
+            width: 45%;
+        }
+
+        h2.welcome-message {
+            padding: 10px 0;
+            font-size: 22px;
+            font-weight: bold;
+            color: #0060c8;
+            text-align: center;
+        }
+
+        #about p {
+            font-size: 14px;
+            padding: 0 14px 5px;
+            text-align: left;
+        }
+
+        #about img {
+            width: 53%;
+            margin-top: 20px;
+            float: right;
+        }
+
+        #community-top {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .guest-terms-content {
+            text-align: center;
+            margin: 10px 14px 0;
+        }
+
+        .guest-terms-link {
+            background-color: #0060c8;
+            color: #fff;
+            padding: 7px 35px 7px 20px;
+            position: relative;
+            line-height: 18px;
+            text-align: left;
+            display: inline-block;
+            border-radius: 40px;
+            text-decoration: none;
+        }
+
+        .guest-terms-link:hover {
+            background-color: #55be00;
+        }
+
+        .guest-terms-link:before {
+            font-size: 10px;
+            content: "▶";
+            color: #fff;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            margin-top: -9px;
+        }
+
+        #footer {
+            background: #e2e2e2;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        #footer-inner {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 30px 0;
+        }
+
+        #footer-inner:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #footer-inner p {
+            display: inline-block;
+            padding: 0 5px;
+        }
+
+        #footer-inner p a {
+            color: #969696;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        #footer-inner p a:hover {
+            color: #646464;
+            text-decoration: underline;
+        }
+
+        #footer-inner #copyright {
+            display: block;
+        }
+
+        .guest-top.guest #main-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 170px); /* full height minus footer */
+            max-width: 100%;
+            padding: 0 0 170px 0;
+        }
+
+        .guest-top.guest #community-top {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 640px) {
+            #about-text, #about img {
+                width: 100%;
+                float: none;
+            }
+
+            #about img {
+                display: block;
+                max-width: 500px;
+                margin: 20px auto 0;
+            }
+
+            .guest-top.guest #about-inner {
+                max-width: 615px;
+                padding: 0 0 35px;
+            }
+
+            h2.welcome-message {
+                font-size: 18px;
+                padding: 0 0 10px;
+            }
+
+            .guest-top.guest #community-top {
+                padding: 10px 5px 20px;
+                max-width: 625px;
+            }
+
+            .guest-top.guest #about {
+                font-size: 14px;
+                padding: 15px 15px 5px;
+            }
+
+            .guest-top.guest #about p {
+                padding: 0;
+            }
+
+            .guest-top.guest .guest-terms-content {
+                margin: 7px 0px 0;
+            }
+        }
+    </style>
+</head>
+<body class="guest-top guest">
+    <div id="wrapper">
+        <div id="sub-body">
+            <menu id="global-menu">
+                <li id="global-menu-logo">
+                    <h1>
+                        <a href="/">
+                            <img alt="Brewverse" height="30" src="https://files.catbox.moe/7iow1r.png" width="165"/>
+                        </a>
+                    </h1>
+                </li>
+            </menu>
+        </div>
+
+        <div id="main-body">
+            <div id="community-top">
+                <div id="about">
+                    <div id="about-inner">
+                        <div id="about-text">
+                            <h2 class="welcome-message">Brewverse is launching soon!</h2>
+                            <p>Brewverse is a service that lets you communicate with other players from around the world. It is accessible via most browsers.</p>
+                            <div class="guest-terms-content">
+                                <a class="guest-terms-link" href="#">Learn More</a>
+                            </div>
+                        </div>
+                        <img src="https://files.catbox.moe/869g7k.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="footer-inner">
+                <div class="link-container" style="text-align: center;">
+                    <p><a href="#">Contact Us</a></p>
+                    <p><a href="#">Privacy Notice</a></p>
+                    <p id="copyright">
+                        <a href="#">© 2025 Brewtendo - Brewtendo and Brewverse is not affiliated with Nintendo or affiliates.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
